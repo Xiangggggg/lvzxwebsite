@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", arial;
+}
+
+h1 {
+    margin-top: 7%;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+/* navbar styles */
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav .active {
+    color: blue;
+}
+
+nav li {
+    display: inline-block;
+    margin: 20px;
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+    width: 100px;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+}
+
+nav a:hover {
+    color: blue;
+}
+
+.submenu {
+    display: none;
+}
+
+nav ul li:hover .submenu {
+    display: block;
+    position: absolute;
+}
+
+nav ul li:hover .submenu ul{
+    display: list-item;
+    display: block;
+}
