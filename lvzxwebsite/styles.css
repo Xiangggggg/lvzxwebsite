@@ -56,3 +56,60 @@ nav ul li:hover .submenu ul{
     display: list-item;
     display: block;
 }
+
+/* front page column */
+
+.column {
+    position: relative;
+    width: 100%;
+}
+
+.column img {
+    height: auto;
+}
+
+.column .btn1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+.column .btn1:hover {
+    background-color: black;
+    color: white;
+    transition: .7s;
+}
+
+.column .btn2 {
+    position: absolute;
+    top: 90%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+.column .btn2:hover {
+    background-color: black;
+    color: white;
+    transition: .7s;
+}
