@@ -8,11 +8,13 @@
         <title>zx.lyu</title>
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.2/css/bulma.min.css">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="styles.css"> 
+        <script defer src="script.js"></script> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
     </head>
 
     <body>
+        
         <!-- Nav Bar -->
         <h1>Zhixuan Lyu</h1>
         <nav>
@@ -35,28 +37,35 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+        <main id="swup" class="transition-fade">
         <div class="columns" style="margin-top:120px;">
             <div class="column">
-                <img src="images/home1.png" alt="" style="overflow:hidden">
+                <a href="eventphoto.html">
+                    <img src="homeimages/home1.png" alt="">
+                </a>
                 <form action="eventphoto.html">
                     <input type="submit" value="Commercial Photo" class="btn1"/>
                 </form>
             </div>
             <div class="column">
-                <img src="images/home2.png" alt="" style="float: right; margin-right: 120px;">     
+                <a href="art-photography.html">
+                    <img src="homeimages/home2.png" alt="" style="float: right; margin-right: 120px;">
+                </a>     
                 <form action="art-photography.html">
                     <input type="submit" value="Art Photo" class="btn2"/>
                 </form>  
             </div>
         </div>
-        <a href="https://www.instagram.com/zx.lyu/">
-            <img src="images/snapchat.png" alt="" style="float: right; margin-bottom: 50px; margin-top: 150px; margin-right: 200px;">
-        </a>
-
-        <p style="font-size:12.5px; margin-bottom: 50px; margin-top: 150px; margin-left: 100px;">
-            @ZHIXUAN LYU
-        </p>
+        </main>
 
     </body>
-    <script src="main.js"></script>
+    <footer>
+        <a href="https://www.instagram.com/zx.lyu/" target="_blank" rel="noopener noreferrer">
+            <img src="generalimages/instagram1.png" alt="" style="float: right; margin-right: 100px; margin-top:100px; margin-bottom: 50px;">
+        </a>
+
+        <p style="font-size:12.5px; float: left; margin-left:100px; margin-top: 100px;">
+            @ZHIXUAN LYU
+        </p>
+    </footer>
 </html>
