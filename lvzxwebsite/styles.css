@@ -98,6 +98,7 @@ nav a{
 
 nav a:hover {
     color: blue;
+    transition: .5s;
 }
 
 .submenu {
@@ -182,3 +183,10 @@ nav ul li:hover .submenu ul{
     margin: auto;
     width: 30%;
 }
+
+/* image gallery */
+
+
+
+
+
