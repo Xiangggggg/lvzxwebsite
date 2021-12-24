@@ -75,7 +75,14 @@ nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    text-align: center;
+    text-align: center; 
+}
+nav .submenu ul {
+    text-align: left;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 nav .active {
@@ -207,3 +214,12 @@ nav ul li:hover .submenu ul{
     
 }
 
+.centered-box {
+    margin: auto;
+        
+    width: 40%;
+}
+
+.centered-video {
+    margin: auto;
+}
