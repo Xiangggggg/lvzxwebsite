@@ -192,34 +192,182 @@ nav ul li:hover .submenu ul{
 }
 
 /* image gallery */
-
-.gallery {
-    margin-right: 100px;
-    margin-left: 100px;
+body{
+    margin:10px;
+    padding:0;
+    text-align:center;
 }
 
-
-.gallery img {
-    margin-bottom: 10px;
-    max-width: 300px;
-    max-height: 350px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.container{
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-auto-rows:75px 225px;
+    grid-gap:10px;
+    grid-auto-flow: dense;
 }
 
-.image-container {
-    width: 300px;
-    height: 350px;
+.gallery-item{
+    width:100%;
+    height:100%;
     
 }
 
+.gallery-item .image{
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-item .image img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    object-position:50% 50%;
+    cursor:pointer;
+}
+
+.w-1{
+    grid-column: span 1;
+}
+.w-2{
+    grid-column: span 2;
+}
+.w-3{
+    grid-column: span 3;
+}
+.w-4{
+    grid-column: span 4;
+}
+.w-5{
+    grid-column: span 5;
+}
+.w-6{
+    grid-column: span 6;
+}
+
+.h-1{
+    grid-row: span 1;
+}
+.h-2{
+    grid-row: span 2;
+}
+.h-3{
+    grid-row: span 3;
+}
+.h-4{
+    grid-row: span 4;
+}
+.h-5{
+    grid-row: span 5;
+}
+.h-6{
+    grid-row: span 6;
+}
+
+@media screen and (max-width:500px){
+    .container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .w-1,.w-2,.w-3,.w-4,.w-5,.w-6{
+        grid-column:span 1;
+    }
+}
+
+@keyframes move-down{
+
+    0%{
+        top:10%;
+    }
+    50%{
+        top:35%;
+    }
+    100%{
+        top:50%;
+    }
+}
+
+/* film and bio styles */
 .centered-box {
     margin: auto;
-        
     width: 40%;
 }
 
 .centered-video {
     margin: auto;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  max-height: 500px;
+ 
+  position: relative;
+  margin: auto;
+}
+
+.carousel-img {
+    width: 70%;
+    height: 70%;
+}
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  /*width: auto;*/
+  height: 50px;
+  width: 50px;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(95, 90, 90);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 20px 20px 20px 20px;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+}
+.prev {
+  left: 0;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
